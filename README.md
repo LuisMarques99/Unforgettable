@@ -9,8 +9,8 @@ Descrição
 
 
 ### :point_right: Ferramentas:
-* [AndroidStudio](developer.android.com/studio) - IDE utilizado
+* [AndroidStudio](https://developer.android.com/studio) - IDE utilizado
 
 
 ### :point_right: Autor:
-* Luís Marques - 81704875 - [LuisMarques99](github.com/LuisMarques99)
+* Luís Marques - 81704875 - [LuisMarques99](https://github.com/LuisMarques99)

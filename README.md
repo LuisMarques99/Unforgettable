@@ -8,6 +8,8 @@ Este projeto foi realizado no âmbito da unidade curricular de **Computação M�
 * [AndroidStudio](https://developer.android.com/studio) - IDE para desenvolvimento
 * [Gradle](https://gradle.org/) - Gestão de dependências
 * [Java](https://www.java.com/en/) - Linguagem de programação
+* [GitHub](https://github.com/) - Controlo de versões
+* [JUnit 5](https://junit.org/junit5/) - Testes unitários
 
 
 ## Autor:

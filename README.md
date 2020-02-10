@@ -4,14 +4,13 @@
 
 **Computação Móvel e Ubíqua**
 
-## :point_right: Descrição:
+### :point_right: Descrição:
 Descrição
 
 
-## :point_right: Ferramentas:
-Ferramentas
+### :point_right: Ferramentas:
+* [AndroidStudio](developer.android.com/studio) - IDE utilizado
 
 
-## :point_right: Feito por:
-
-- Luís Marques - 81704875
+### :point_right: Autor:
+* Luís Marques - 81704875 - [LuisMarques99](github.com/LuisMarques99)

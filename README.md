@@ -4,13 +4,16 @@
 
 **Computação Móvel e Ubíqua**
 
-### :point_right: Descrição:
-Descrição
+
+### Descrição:
+Este projeto foi realizado no âmbito da unidade curricular Computação Móvel e Ubíqua, para a Época de Recurso do ano letivo 2019/20.
 
 
-### :point_right: Ferramentas:
-* [AndroidStudio](https://developer.android.com/studio) - IDE utilizado
+### Ferramentas:
+* [AndroidStudio](https://developer.android.com/studio) - IDE para desenvolvimento
+* [Gradle](https://gradle.org/) - Gestão de dependências
+* [Java](https://www.java.com/en/) - Linguagem de programação
 
 
-### :point_right: Autor:
+### Autor:
 * Luís Marques - 81704875 - [LuisMarques99](https://github.com/LuisMarques99)

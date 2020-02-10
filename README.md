@@ -1,14 +1,14 @@
 # :bell: Unforgettable :bell:
 
-##:point_right: Descrição:
+## :point_right: Descrição:
 Descrição
 
 
-##:point_right: Ferramentas:
+## :point_right: Ferramentas:
 Ferramentas
 
 
-##:point_right: Feito por:
+## :point_right: Feito por:
 
 - Luís Marques - 81704875
 

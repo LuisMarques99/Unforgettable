@@ -1,12 +1,7 @@
 # :bell: Unforgettable :bell:
 
-**Escola Superior de Tecnologia e Gestão - P.Porto**
-
-**Computação Móvel e Ubíqua**
-
-
 ### Descrição:
-Este projeto foi realizado no âmbito da unidade curricular Computação Móvel e Ubíqua, para a Época de Recurso do ano letivo 2019/20.
+Este projeto foi realizado no âmbito da unidade curricular de **Computação Móvel e Ubíqua** da **Escola Superior de Tecnologia e Gestão - P.Porto**, para a Época de Recurso do ano letivo 2019/20.
 
 
 ### Ferramentas:

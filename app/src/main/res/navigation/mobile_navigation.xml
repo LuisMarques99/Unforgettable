@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_tasks">
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.example.unforgettable.ui.user.UserFragment"
+        android:label="@string/menu_user"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
+        android:id="@+id/nav_tasks"
+        android:name="com.example.unforgettable.ui.tasks.TasksFragment"
+        android:label="@string/menu_tasks"
+        tools:layout="@layout/fragment_tasks" />
+
+    <fragment
+        android:id="@+id/nav_medicines"
+        android:name="com.example.unforgettable.ui.medicines.MedicinesFragment"
+        android:label="@string/menu_medicines"
+        tools:layout="@layout/fragment_medicines" />
+
+    <fragment
+        android:id="@+id/nav_meals"
+        android:name="com.example.unforgettable.ui.meals.MealsFragment"
+        android:label="@string/menu_meals"
+        tools:layout="@layout/fragment_meals" />
+
+    <!--<fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.unforgettable.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.unforgettable.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />-->
+</navigation>

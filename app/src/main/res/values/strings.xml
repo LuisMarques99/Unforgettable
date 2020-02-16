@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Unforgettable</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Definições</string>
+
+    <string name="menu_tasks">Tarefas</string>
+    <string name="menu_medicines">Medicamentos</string>
+    <string name="menu_meals">Refeições</string>
+    <string name="menu_user">Perfil</string>
+    <string name="menu_user_edit">Editar Perfil</string>
+
+    <string-array name="gender_values">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outro</item>
+    </string-array>
+</resources>

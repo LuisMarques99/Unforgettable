@@ -4,6 +4,8 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 /**
  * <h3>
  * <strong>Class that represents the structure of a {@link Medicine Medicine}</strong>
@@ -12,7 +14,7 @@ import androidx.room.PrimaryKey;
  * @author Luis Marques
  */
 @Entity(tableName = "Medicines")
-public class Medicine {
+public class Medicine implements Serializable {
 
     /**
      * int reference to the id
@@ -34,12 +36,19 @@ public class Medicine {
     private String description;
 
     /**
+     * Creates an instance of a {@link Medicine medicine} without attributes
+     */
+    public Medicine() {
+    }
+
+    /**
      * Creates an instance of a {@link Medicine medicine}
      *
      * @param name        String name
      * @param description String description
      */
     public Medicine(String name, String description) {
+        id = 1;
         this.name = name;
         this.description = description;
     }
@@ -51,6 +60,15 @@ public class Medicine {
      */
     public int getId() {
         return id;
+    }
+
+    /**
+     * Sets the id of the medicine
+     *
+     * @param id int id of the medicine
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**

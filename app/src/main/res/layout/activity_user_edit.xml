@@ -55,7 +55,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:fontFamily="sans-serif-light"
-            android:text="Jose Almeida"
+            android:hint="Nome"
             android:textColor="@color/gray"
             android:textSize="32sp"
             android:textStyle="bold" />
@@ -72,7 +72,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
             android:orientation="vertical">
 
@@ -91,12 +90,12 @@
 
                 <EditText
                     android:id="@+id/edit_age"
-                    android:layout_width="60dp"
+                    android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-light"
+                    android:hint="Idade"
                     android:inputType="number"
-                    android:text="68"
                     android:textColor="@color/gray"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -128,16 +127,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp" />
 
-                <!--<TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="sans-serif-light"
-                    android:text="Masculino"
-                    android:textColor="@color/gray"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />-->
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -165,8 +154,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-light"
+                    android:hint="ContactoSOS"
                     android:inputType="number"
-                    android:text="917564783"
                     android:textColor="@color/gray"
                     android:textSize="24sp"
                     android:textStyle="bold" />

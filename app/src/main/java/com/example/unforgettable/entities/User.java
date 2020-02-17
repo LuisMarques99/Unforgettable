@@ -1,5 +1,11 @@
 package com.example.unforgettable.entities;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.room.TypeConverter;
+
+import com.example.unforgettable.exceptions.InvalidContactException;
 import com.example.unforgettable.util.Contact;
 
 import java.io.Serializable;
@@ -12,32 +18,39 @@ import java.util.Objects;
  *
  * @author Luis Marques
  */
+@Entity(tableName = "Users")
 public class User implements Serializable {
 
     /**
      * int reference to id
      */
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "Id")
     private int id;
 
     /**
      * String reference to name
      */
+    @ColumnInfo(name = "Name")
     private String name;
 
     /**
      * String reference to the age
      */
+    @ColumnInfo(name = "Age")
     private String age;
 
     /**
      * String reference to the gender
      */
+    @ColumnInfo(name = "Gender")
     private String gender;
 
     /**
-     * Contact reference to the emergency contact
+     * String reference to the emergency contact
      */
-    private Contact sosContact;
+    @ColumnInfo(name = "SosContact")
+    private String sosContact;
 
     /**
      * Creates an instance of a {@link User User} without attributes
@@ -52,14 +65,14 @@ public class User implements Serializable {
      * @param name       String name
      * @param age        String age
      * @param gender     String gender
-     * @param sosContact Contact sosContact
+     * @param sosContact String sosContact
      */
-    public User(int id, String name, String age, String gender, Contact sosContact) {
+    public User(int id, String name, String age, String gender, String sosContact) throws InvalidContactException {
         this.id = id;
         this.name = name;
         this.age = age;
         this.gender = gender;
-        this.sosContact = sosContact;
+        setSosContact(sosContact);
     }
 
     /**
@@ -137,18 +150,28 @@ public class User implements Serializable {
     /**
      * Gets the emergency contact
      *
-     * @return Contact emergency contact
+     * @return String emergency contact
      */
-    public Contact getSosContact() {
+    public String getSosContact() {
         return sosContact;
     }
 
     /**
      * Sets the emergency contact
      *
-     * @param sosContact Contact emergency contact
+     * @param sosContact String emergency contact
      */
-    public void setSosContact(Contact sosContact) {
+    public void setSosContact(String sosContact) throws InvalidContactException {
+        if (sosContact.length() > 9) {
+            throw new InvalidContactException("O Contacto não pode ter mais que nove dígitos!");
+        }
+        if (sosContact.charAt(0) == 9) {
+            if (sosContact.charAt(1) != 1 || sosContact.charAt(1) != 2 || sosContact.charAt(1) != 3
+                    || sosContact.charAt(1) != 6) {
+                throw new InvalidContactException("O Contacto tem de ser válido");
+            }
+        }
+
         this.sosContact = sosContact;
     }
 

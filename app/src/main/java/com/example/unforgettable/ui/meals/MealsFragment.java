@@ -16,20 +16,10 @@ import com.example.unforgettable.R;
 
 public class MealsFragment extends Fragment {
 
-    private MealsViewModel mealsViewModel;
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        mealsViewModel =
-                ViewModelProviders.of(this).get(MealsViewModel.class);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_meals, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        mealsViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

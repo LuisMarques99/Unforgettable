@@ -10,6 +10,16 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // DB Schemas
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        "room.schemaLocation"  : "$projectDir/schemas".toString(),
+                        "room.incremental"     : "true",
+                        "room.expandProjection": "true"]
+            }
+        }
     }
     buildTypes {
         release {
@@ -38,7 +48,7 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:$room_version"
 
     //RecyclerView
-    def recyclerView_version ="1.0.0"
+    def recyclerView_version = "1.0.0"
     implementation "androidx.recyclerview:recyclerview:$recyclerView_version"
     implementation "androidx.recyclerview:recyclerview-selection:$recyclerView_version"
 }

@@ -8,21 +8,21 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.unforgettable.entities.Medicine;
+import com.example.unforgettable.entities.User;
 
 import java.util.List;
 
 @Dao
-public interface MedicineDAO {
+public interface UserDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertMedicine(Medicine... medicines);
+    void insertUser(User... users);
 
     @Update
-    void updateMedicine(Medicine... medicines);
+    void updateUser(User... users);
 
     @Delete
-    void deleteMedicine(Medicine... medicines);
+    void deleteUser(User... users);
 
-    @Query("SELECT * FROM Medicines")
-    LiveData<List<Medicine>> getAllMedicines();
+    @Query("SELECT * FROM Users")
+    LiveData<List<User>> getAllUsers();
 }

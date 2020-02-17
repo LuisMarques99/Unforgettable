@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/user_fragment_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,7 +39,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:fontFamily="sans-serif-light"
-            android:text="Jose Almeida"
+            android:text="Nome"
             android:textColor="@color/gray"
             android:textSize="32sp"
             android:textStyle="bold" />
@@ -80,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-light"
-                    android:text="68"
+                    android:text="99"
                     android:textColor="@color/gray"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -112,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-light"
-                    android:text="Masculino"
+                    android:text="Género"
                     android:textColor="@color/gray"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -144,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-light"
-                    android:text="917564783"
+                    android:text="912345678"
                     android:textColor="@color/gray"
                     android:textSize="24sp"
                     android:textStyle="bold" />
